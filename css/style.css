@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgb(247, 247, 247);
+}
+
+.listThemes {
+    display: flex;
+    gap: 6px;
+    margin-top: 30px;
+}
+
+.listThemes a {
+    text-decoration: none;
+    font-size: 16px;
+    background-color: rgb(7, 118, 126);
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.listThemes a:focus,
+.listThemes a:active {
+    background-color: red;
+}
+
+.dadosFiltrados {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 120px;
+    height: 60px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 242, 242);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card:hover {
+    background-color: rgb(7, 118, 126);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    background-color: rgb(122, 139, 141);
+    padding: 30px;
+    border-radius: 10px;
+    gap: 10px;
+    width: auto;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(7, 118, 126);
+}
+@media (max-width:1023px) {
+    body {
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .listThemes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .listThemes a {
+        font-size: 26px;
+    }
+
+    .card {
+        font-size: 24px;
+    }
+}
